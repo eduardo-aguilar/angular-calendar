@@ -202,7 +202,7 @@
 <p>The week view now has a border top applied to the top of the component container, rather than the top of the day headers container.</p>
 <p>The <code>getDayView</code> and <code>getDayViewHourGrid</code> functions have been removed from the <code>CalendarUtils</code> service.</p>
 <p>The following interfaces from <code>calendar-utils</code> were renamed: <code>DayViewHourSegment</code> -&gt; <code>WeekViewHourSegment</code>, <code>DayViewHour</code> -&gt; <code>WeekViewHour</code>, <code>DayViewEvent</code> -&gt; <code>WeekViewTimeEvent</code></p>
-<p>The day view scheduler demo is now based off the week view instead, please check the updated demo code for how to migrate: <a href="https://mattlewis92.github.io/angular-calendar/#/day-view-scheduler">https://mattlewis92.github.io/angular-calendar/#/day-view-scheduler</a></p>
+<p>The day view scheduler demo is now based off the week view instead, please check the updated demo code for how to migrate: <a href="https://eduardo-aguilar.github.io/angular-calendar/#/day-view-scheduler">https://eduardo-aguilar.github.io/angular-calendar/#/day-view-scheduler</a></p>
 <p>If using a custom template for the <code>hourSegmentTemplate</code>, you must pass <code>let-isTimeLabel=&quot;isTimeLabel&quot;</code> as a local variable and then change <code>&lt;div class=&quot;cal-time&quot;&gt;</code> to <code>&lt;div class=&quot;cal-time&quot; *ngIf=&quot;isTimeLabel&quot;&gt;</code></p>
 <ul>
 <li>the dist files are no longer annotated for usage with closure compiler.</li>
@@ -912,7 +912,7 @@ People using custom day event event templates can also remove these lines from t
 ### BREAKING CHANGES
 
 * **monthView:** the `dayModifier` input has been replaced with a more powerful `beforeViewRender`
-output. See [the demo](https://mattlewis92.github.io/angular-calendar/#/before-view-render) for an example of how to migrate your code.
+output. See [the demo](https://eduardo-aguilar.github.io/angular-calendar/#/before-view-render) for an example of how to migrate your code.
 * **dayView:** the `hourSegmentModifier` has been replaced with the `beforeViewRender` output.
 * For system.js users only, the UMD path to the `calendar-utils` module has changed from `calendar-utils/dist/umd/calendarUtils.js` to `calendar-utils/dist/umd/calendar-utils.js`
 * **weekView:** the `allowDragOutside` option has been removed from the week view as this can be implemented in user land. Please see this plunker for how to introduce it yourself: http://plnkr.co/edit/5KyUBC0lnfMsYMcVFAR9?p=preview
